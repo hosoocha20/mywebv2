@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    
+  }
+
+body {
+  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  height: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*NavBar.jsx CSS*/
+.menu-text{
+  font-family: 'Source Code Pro', monospace;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  /*Home.jsx CSS*/
+.cursor-animation{
+  animation: blink .75s step-end infinite;
+}
+
+  @keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: #fae72a; 
+	}
+}
+
+.hello-text{
+  font-size: clamp(2rem, 8vw, 5rem);
+
+}
+
+/*About.jsx CSS*/
+.about-text{
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Lora', serif; */
+  font-size: clamp(1rem, 5vw, 2.5rem);
+}
+.about-text-slanted{
+  animation: slanted 500ms ease-out;
+
+  
+}
+
+@keyframes slanted {
+  0%{
+  transform: skewX(40deg) translate(0,100%);
+  }
+  20%{
+    transform: skewX(35deg) translate(0,90%);
+  }
+  40%{
+    transform: skewX(30deg) translate(0,70%);
+  }
+  60%{
+    transform: skewX(20deg) translate(0,40%);
+  }
+  80%{
+    transform: skewX(10deg) translate(0,20%);
+  }
+  100%{
+  transform: skewX(0deg) translate(0,0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*Projects.jsx CSS*/
+.proj-hover-transition{
+
+}
+.proj-hover-text{
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Contacts.jsx CSS*/
+.contact-text{
+  font-family: 'Lora', serif;
 }
