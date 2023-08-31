@@ -33,12 +33,29 @@ body {
   font-size: clamp(2rem, 8vw, 5rem);
 
 }
+.mouse-scroll{
+  background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));
+  border-radius: 50%;
+  margin: auto;
+  animation: scrolling13 1.5s linear infinite;
+}
+@keyframes scrolling13 {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
 
 /*About.jsx CSS*/
 .about-text{
   font-family: 'Poppins', sans-serif;
   /* font-family: 'Lora', serif; */
-  font-size: clamp(1rem, 5vw, 2.5rem);
+  font-size: clamp(1rem, 4vw, 2.3rem);
 }
 .about-text-slanted{
   animation: slanted 500ms ease-out;
@@ -68,11 +85,10 @@ body {
 }
 
 /*Projects.jsx CSS*/
-.proj-hover-transition{
-
-}
-.proj-hover-text{
-
+#ga-video{
+object-fit: fill;
+width: 100%;
+height: 100%;
 }
 
 /*Contacts.jsx CSS*/
