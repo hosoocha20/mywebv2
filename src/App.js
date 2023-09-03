@@ -51,6 +51,9 @@ function App() {
 
   // }
   // window.addEventListener("mousemove", moveCursor);
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+  }, []);
 
   useEffect(() => {
     const handleScroll = (e) => {
@@ -81,14 +84,14 @@ function App() {
       {/* <div className="myCursor"><span className="mouseBall"></span></div> */}
 
         <div className="fixed top-[2rem] px-[2rem] z-[9999] w-screen">
-          <nav className="sticky top-0 flex justify-center min-[490px]:justify-between w-full ">
-            <div className="hidden min-[490px]:block tracking-widest text-[1.2rem] menu-text font-medium">
-              HC
+          <nav className="sticky top-0 flex justify-center  min-[490px]:justify-between w-full ">
+            <div className="hidden min-[490px]:block tracking-widest text-[1.2rem] sm:text-[1.5rem] menu-text font-medium">
+              H<span className={`inline-block ${activeComponent === "home" ? '' : 'rotateC' }`}>C</span>
             </div>
-            <div className="hidden sm:block font-medium tracking-widest text-[1.2rem] ">
+            <div className={` hidden sm:block font-medium tracking-widest text-[1.2rem] transition-opacity duration-500 ease-linear ${activeComponent === "home" ? 'sm:block sm:opacity-100' : 'sm:opacity-0'}`}>
               HOSOO CHA
             </div>
-            <ul className="font-semibold menu-text md:text-[1.2rem] text-[1rem] sm:text-right text-center flex gap-x-[0.7rem] gap-y-[0.3rem] sm:flex-col justify-items-end items-end">
+            <ul className="font-semibold menu-text md:text-[1.2rem] sm:text-[1rem] text-[1rem] sm:text-right text-center flex gap-x-[0.7rem] gap-y-[0.3rem] sm:flex-col justify-items-end sm:items-end items-center">
               <li
                 className={`cursor-pointer  w-fit px-[3px] relative before:absolute before:left-0 before:z-[-1]  before:h-full  before:duration-[300ms] before:delay-75 before:ease-linear before:bg-my-yellow before:rounded ${
                   activeComponent === "home"
@@ -97,7 +100,7 @@ function App() {
                 } `}
                 onClick={() => handleNavClick(1)}
               >
-                <FlowerHomeIcon className="w-[2.2rem] h-[2.2rem] sm:w-[3.5rem] sm:h-[3.5rem] py-[5px]" />
+                <FlowerHomeIcon className="w-[2.2rem] h-[2.2rem] sm:w-[3.5rem] sm:h-[3.5rem] py-[5px] hover:rotate-[270deg] transition-transform duration-700 ease-in-out" />
               </li>
               <li
                 className={`cursor-pointer  w-fit px-[4px] relative before:absolute before:left-0 before:z-[-1]  before:h-full before:duration-[300ms] before:delay-75 before:ease-linear before:bg-my-yellow before:rounded ${
@@ -134,10 +137,10 @@ function App() {
         </div>
 
 
-        <Home ref={homeRef} activeComponent={activeComponent} className="w-full h-screen snap-start"/>
-        <About ref={aboutRef} className="w-full md:min-h-screen h-screen snap-start"/>
-        <Projects ref={projRef} className="w-full md:min-h-screen h-screen snap-start"/>
-        <Contact ref={contactRef} className="w-full h-screen snap-start"/>
+        <Home ref={homeRef} activeComponent={activeComponent} />
+        <About ref={aboutRef} />
+        <Projects ref={projRef} />
+        <Contact ref={contactRef} />
 
 
 

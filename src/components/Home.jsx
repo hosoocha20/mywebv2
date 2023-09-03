@@ -19,7 +19,7 @@ const Home = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="w-full h-screen bg-my-white flex flex-col md:items-center justify-center gap-[2rem] px-[2rem] relative"
+      className="w-full h-screen bg-my-white flex flex-col items-center justify-center gap-[2rem] px-[2rem] relative"
     >
       <div className="flex items-center h-[4.5rem]">
         <Typed

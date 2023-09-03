@@ -6,7 +6,7 @@ import { MdOpenInBrowser } from "react-icons/md";
 const ProjectItemModal = (props) => {
   return (
     <div
-      className={`transition-scale duration-500 delay-200 sm:w-[600px] w-full bg-[#f9f9f9] h-full rounded scale-0  pt-[3.8rem]  overflow-y-auto relative flex flex-col justify-between  ${
+      className={`transition-scale duration-500 delay-200 sm:w-[600px] w-full bg-my-white h-full rounded scale-0  pt-[3.8rem]  overflow-y-auto relative flex flex-col justify-between  ${
         props.openProjModal ? "scale-100" : "delay-0"
       }`}
     >
@@ -57,7 +57,7 @@ const ProjectItemModal = (props) => {
           <div className="flex flex-row flex-wrap gap-[0.3rem] sm:gap-[1rem] pt-[0.5rem]">
             {props.arrayOfTools.map((i) => {
               return (
-                <div className="px-[0.6rem] py-[0.2rem]  rounded text-xs bg-[#d2d2d2] font-medium">
+                <div className="px-[0.6rem] py-[0.2rem]  rounded text-xs bg-[#1c1c1e] text-white font-medium">
                   {i}
                 </div>
               );
@@ -74,7 +74,7 @@ const ProjectItemModal = (props) => {
           <a href={props.projWebsite} target="_blank" rel="noreferrer" className="text-sm sm:text-[15px] hover:underline underline-offset-2 text-[#3985d0] font-medium">{props.projWebsite}</a>
         </div>
       </div>
-      <div className="group sticky bottom-0 left-0 w-full flex items-center justify-center gap-x-[0.5rem] bg-[#c0c0c0] py-[1.25rem] rounded cursor-pointer">
+      <div className="group sticky bottom-0 left-0 w-full flex items-center justify-center gap-x-[0.5rem] bg-[#1c1c1e] text-white py-[1.25rem] rounded-b-lg-[1rem] cursor-pointer">
         <a href={props.projWebsite} target="_blank" rel="noreferrer" className=" text-sm sm:text-[1rem] font-medium group-hover:underline underline-offset-2">
           Open Website
         </a>

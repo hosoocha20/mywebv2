@@ -11,15 +11,28 @@ body {
   overflow-x: hidden;
 }
 
+/*font styling*/
+.fat-face{
+  font-family: 'Archivo Black', sans-serif;
+}
+.baskerville{
+  font-family: 'Libre Baskerville', serif;
+}
+
 /*NavBar.jsx CSS*/
 .menu-text {
   font-family: "Source Code Pro", monospace;
+}
+.rotateC{
+  transform: rotate3d(0, 1, 0, 360deg);
+  transition: transform 1s ease-in-out;
 }
 
 /*Home.jsx CSS*/
 .cursor-animation {
   animation: blink 0.75s step-end infinite;
 }
+
 
 @keyframes blink {
   from,
@@ -60,11 +73,17 @@ body {
 .about-text {
   font-family: "Poppins", sans-serif;
   /* font-family: 'Lora', serif; */
-  font-size: clamp(1rem, 4vw, 2.3rem);
+  font-size: clamp(1rem, 3.7vw, 2.2rem);
 }
 .about-text-slanted {
   animation: slanted 500ms ease-out;
 }
+.about-emphasis{
+  /*font-family: 'Libre Baskerville', serif;*/
+  font-family: 'Lora', serif;
+}
+
+
 
 @keyframes slanted {
   0% {

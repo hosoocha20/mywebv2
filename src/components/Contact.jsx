@@ -9,13 +9,13 @@ const Contact = forwardRef((props, ref) => {
     >
       <div className="w-full h-full flex flex-col justify-center items-center">
         <div className="flex w-fit justify-center gap-[1.5rem] relative">
-          <AnimationOnScroll animateIn="animate__fadeInUp" delay={100}>
+          <AnimationOnScroll animateIn="animate__fadeInUp" delay={100} animateOnce={true}>
             <h1 className="text-[12vw] md:text-[5.5rem] contact-text ">Get</h1>
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
+          <AnimationOnScroll animateIn="animate__fadeInUp" delay={200} animateOnce={true}>
             <h1 className="text-[12vw] md:text-[5.5rem] contact-text ">in</h1>
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInUp" delay={300}>
+          <AnimationOnScroll animateIn="animate__fadeInUp" delay={300} animateOnce={true}>
             <h1 className="text-[12vw] md:text-[5.5rem] contact-text ">
               Touch<span className=" text-my-yellow">.</span>
             </h1>
@@ -25,6 +25,7 @@ const Contact = forwardRef((props, ref) => {
           animateIn="animate__fadeIn"
           delay={650}
           duration={1.5}
+          animateOnce={true}
           className="mt-[1rem]"
         >
           <a
