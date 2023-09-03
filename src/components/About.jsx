@@ -10,9 +10,9 @@ const About = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="min-h-screen md:px-[4rem] px-[2rem] py-[3rem] flex flex-col justify-evenly bg-[#f9f9f9]"
+      className="min-h-screen md:h-screen md:px-[4rem] px-[2rem] py-[3rem] flex flex-col justify-evenly bg-[#f9f9f9]"
     >
-      <AnimationOnScroll animateIn="animate__fadeInUp" delay={100}>
+      <AnimationOnScroll animateIn="animate__fadeInUp" delay={100} offset={1}>
         <div className=" about-text">
           <p className="overflow-hidden  leading-none flex gap-[1.5%]">
             I am a{" "}

@@ -31,7 +31,7 @@ const Projects = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="w-full min-h-screen  px-[1rem] py-[4rem] flex flex-col gap-y-[2.5rem] justify-center bg-[#f9f9f9]"
+      className="w-full min-h-screen md:h-screen  px-[1rem] py-[4rem] flex flex-col gap-y-[2.5rem] justify-center bg-[#f9f9f9]"
     >
       <AnimationOnScroll animateIn="animate__fadeInUp" delay={200} duration={1}>
         <h1 className="text-[2.2rem] sm:text-[3.5rem] font-semibold text-center">
