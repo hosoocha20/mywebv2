@@ -133,6 +133,7 @@ const Projects = forwardRef((props, ref) => {
           projVideo={gaVideo}
           projPoster={gaPoster}
           projAbout="The Game Academy is a website where users can browse through products and play a game of chess with other registered users through the server."
+          projWebsite="https://hosoocha20.github.io/game-academy/"
         />
       </div>
       <div
@@ -151,6 +152,7 @@ const Projects = forwardRef((props, ref) => {
           projVideo={myWebVideo}
           projPoster={myWebPoster}
           projAbout="My e-portfolio showcasing my projects that I have worked on."
+          projWebsite=""
         />
       </div>
       <div
@@ -169,6 +171,7 @@ const Projects = forwardRef((props, ref) => {
           projVideo={todoVideo}
           projPoster={todoPoster}
           projAbout="My To Do App is a productivity app for users to list down tasks, important tasks, get the local weather and write notes."
+          projWebsite="https://todoitnow.org/"
         />
       </div>
     </div>

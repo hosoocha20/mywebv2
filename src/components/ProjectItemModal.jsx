@@ -66,18 +66,18 @@ const ProjectItemModal = (props) => {
         </div>
         <div>
           <div className="flex items-center gap-x-[0.5rem]">
-            <ImEarth />
+            <ImEarth className="text-[#3f3f3f]"/>
             <h3 className="text-[1rem] sm:text-[1.1rem] font-semibold">
               Website
             </h3>
           </div>
-          <p className="text-sm sm:text-base">Website Link Here</p>
+          <a href={props.projWebsite} target="_blank" rel="noreferrer" className="text-sm sm:text-[15px] hover:underline underline-offset-2 text-[#3985d0] font-medium">{props.projWebsite}</a>
         </div>
       </div>
       <div className="group sticky bottom-0 left-0 w-full flex items-center justify-center gap-x-[0.5rem] bg-[#c0c0c0] py-[1.25rem] rounded cursor-pointer">
-        <h3 className=" text-sm sm:text-[1rem] font-medium group-hover:underline underline-offset-2">
+        <a href={props.projWebsite} target="_blank" rel="noreferrer" className=" text-sm sm:text-[1rem] font-medium group-hover:underline underline-offset-2">
           Open Website
-        </h3>
+        </a>
         <MdOpenInBrowser className="text-[1.1rem]" />
       </div>
     </div>
