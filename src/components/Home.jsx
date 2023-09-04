@@ -47,15 +47,15 @@ const Home = forwardRef((props, ref) => {
       </div>
 
       <h1 className="hello-text tracking-widest font-medium">
-        I'm <span className="inline-block min-w-fit ">HOSOO CHA.</span>
+        I'm <span className="inline-block min-w-fit ">HOSOO CHA<span className="text-my-yellow">.</span></span>
       </h1>
       <div
         className={`absolute bottom-[2rem] left-0 w-full flex justify-center transition-opacity duration-[1s] ease-in-out ${
           props.activeComponent === "home" ? "opacity-100" : "opacity-0"
         }`}
       >
-        <span className="w-[25px] h-[50px] border border-gray-300 rounded-[20px] flex">
-          <span className="block w-[10px] h-[10px] mouse-scroll"></span>
+        <span className=" w-[25px] h-[50px] border border-gray-300 rounded-[20px] flex ">
+          <span className="block m-auto w-[10px] h-[10px] mouse-scroll"></span>
         </span>
       </div>
     </div>

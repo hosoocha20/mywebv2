@@ -39,8 +39,8 @@ const About = forwardRef((props, ref) => {
       <AnimationOnScroll animateIn="animate__fadeInUp" delay={500} animateOnce={true}>
         <div className=" md:text-clamp1 sm:text-clamp2 text-clamp3  text-right">
           <p>
-            I work primarily with <span className="text-[#2a3dfa] font-medium">React</span>{" "}
-            and <span className="text-[#2a3dfa] font-medium">Javascript</span>.
+            I work primarily with <span className="text-[#2a3dfa] font-medium">REACT</span>{" "}
+            and <span className="text-[#2a3dfa] font-medium">JAVASCRIPT</span>.
           </p>
           <p>However, I am also knowledgeable in the following technologies:</p>
         </div>

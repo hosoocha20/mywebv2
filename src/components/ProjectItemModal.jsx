@@ -24,17 +24,18 @@ const ProjectItemModal = (props) => {
       </div>
       <div className="relative sm:px-[4rem] px-[3rem] flex flex-col gap-y-[1.7rem] pb-[1.5rem]">
         <div>
-          <hr className=""></hr>
-          <h2 className="text-[1.2rem] sm:text-[1.5rem] font-semibold mt-[2rem]">
+          <hr></hr>
+          <h2 className="text-[1.2rem] sm:text-[1.5rem] font-semibold mt-[2rem] text-[#142e9b]">
             {props.projName}
           </h2>
-          <p className="text-sm sm:text-base">{props.projDescription}</p>
+          <p className="text-sm sm:text-base text-[#0c195a]">{props.projDescription}</p>
         </div>
         {props.projVideo ? (
           <video
             autoPlay
             loop
             muted
+            disablePictureInPicture
             className="object-fill rounded-[0.7rem] border"
             poster={props.projPoster}
           >
@@ -46,18 +47,18 @@ const ProjectItemModal = (props) => {
             className="object-fill border rounded-[0.7rem]"
           />
         )}
-        <div>
+        <div className="text-[#0c195a]">
           <h3 className="text-[1rem] sm:text-[1.1rem] font-semibold">About</h3>
           <p className="text-sm sm:text-base">{props.projAbout}</p>
         </div>
         <div>
-          <h3 className="text-[1rem] sm:text-[1.1rem] font-semibold">
+          <h3 className="text-[1rem] sm:text-[1.1rem] font-semibold text-[#0c195a]">
             Tools & Libraries
           </h3>
           <div className="flex flex-row flex-wrap gap-[0.3rem] sm:gap-[1rem] pt-[0.5rem]">
             {props.arrayOfTools.map((i) => {
               return (
-                <div className="px-[0.6rem] py-[0.2rem]  rounded text-xs bg-[#1c1c1e] text-white font-medium">
+                <div className="px-[0.6rem] py-[0.2rem]  rounded text-xs bg-[#5c94ff] text-white font-medium">
                   {i}
                 </div>
               );
@@ -65,8 +66,8 @@ const ProjectItemModal = (props) => {
           </div>
         </div>
         <div>
-          <div className="flex items-center gap-x-[0.5rem]">
-            <ImEarth className="text-[#3f3f3f]"/>
+          <div className="flex items-center gap-x-[0.5rem] text-[#0c195a]">
+            <ImEarth />
             <h3 className="text-[1rem] sm:text-[1.1rem] font-semibold">
               Website
             </h3>
@@ -74,7 +75,7 @@ const ProjectItemModal = (props) => {
           <a href={props.projWebsite} target="_blank" rel="noreferrer" className="text-sm sm:text-[15px] hover:underline underline-offset-2 text-[#3985d0] font-medium">{props.projWebsite}</a>
         </div>
       </div>
-      <div className="group sticky bottom-0 left-0 w-full flex items-center justify-center gap-x-[0.5rem] bg-[#1c1c1e] text-white py-[1.25rem] rounded-b-lg-[1rem] cursor-pointer">
+      <div className="group sticky bottom-0 left-0 w-full flex items-center justify-center gap-x-[0.5rem] bg-[#376aff] text-white py-[1.25rem] rounded-b-lg-[1rem] cursor-pointer">
         <a href={props.projWebsite} target="_blank" rel="noreferrer" className=" text-sm sm:text-[1rem] font-medium group-hover:underline underline-offset-2">
           Open Website
         </a>

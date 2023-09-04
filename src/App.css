@@ -1,6 +1,6 @@
 * {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -12,18 +12,18 @@ body {
 }
 
 /*font styling*/
-.fat-face{
-  font-family: 'Archivo Black', sans-serif;
+.fat-face {
+  font-family: "Archivo Black", sans-serif;
 }
-.baskerville{
-  font-family: 'Libre Baskerville', serif;
+.baskerville {
+  font-family: "Libre Baskerville", serif;
 }
 
 /*NavBar.jsx CSS*/
 .menu-text {
   font-family: "Source Code Pro", monospace;
 }
-.rotateC{
+.rotateC {
   transform: rotate3d(0, 1, 0, 360deg);
   transition: transform 1s ease-in-out;
 }
@@ -32,7 +32,6 @@ body {
 .cursor-animation {
   animation: blink 0.75s step-end infinite;
 }
-
 
 @keyframes blink {
   from,
@@ -54,10 +53,9 @@ body {
     rgb(123, 124, 124)
   );
   border-radius: 50%;
-  margin: auto;
-  animation: scrolling13 1.5s linear infinite;
+  animation: scrollingDown 1.5s linear infinite;
 }
-@keyframes scrolling13 {
+@keyframes scrollingDown {
   0% {
     opacity: 0;
     transform: translateY(-10px);
@@ -66,6 +64,26 @@ body {
   100% {
     opacity: 1;
     transform: translateY(10px);
+  }
+}
+
+@keyframes scrollingUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-10px);
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .mouse-scroll {
+    animation: scrollingUp 1.5s linear infinite;
+   
   }
 }
 
@@ -78,12 +96,10 @@ body {
 .about-text-slanted {
   animation: slanted 500ms ease-out;
 }
-.about-emphasis{
+.about-emphasis {
   /*font-family: 'Libre Baskerville', serif;*/
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
-
-
 
 @keyframes slanted {
   0% {

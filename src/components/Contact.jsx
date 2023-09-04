@@ -30,9 +30,9 @@ const Contact = forwardRef((props, ref) => {
         >
           <a
             href="mailto:Hosoo.cha@gmail.com"
-            className=" px-[6px] py-[3px] text-[1rem] sm:text-[1.2rem] underline underline-offset-4 relative before:absolute before:z-[-1] before:left-0 before:top-0  before:h-full before:w-0 hover:before:w-full before:bg-my-yellow before:rounded before:transition-[width] before:duration-300 before:ease-linear"
+            className="text-[#0c2bc7] px-[6px] py-[3px] text-[1rem] sm:text-[1.2rem] underline underline-offset-4 relative before:absolute before:z-[-1] before:left-0 before:top-0  before:h-full before:w-0 hover:before:w-full before:bg-my-yellow before:rounded before:transition-[width] before:duration-300 before:ease-linear"
           >
-            hosoo.cha@gmail.com
+            hosoocha20@gmail.com
           </a>
         </AnimationOnScroll>
       </div>

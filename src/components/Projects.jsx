@@ -34,14 +34,14 @@ const Projects = forwardRef((props, ref) => {
       className="w-full min-h-screen   px-[1rem] py-[4rem] flex flex-col gap-y-[2.5rem] justify-center bg-[#f9f9f9]"
     >
       <AnimationOnScroll animateIn="animate__fadeInUp" delay={200} duration={1} animateOnce={true}>
-        <h1 className="text-[2.2rem] sm:text-[3.5rem] font-semibold text-center">
+        <h1 className="text-[2.2rem] sm:text-[3.5rem] font-semibold text-center text-[#0c2bc7]">
           MY PROJECTS
         </h1>
       </AnimationOnScroll>
       <AnimationOnScroll animateIn="animate__fadeIn" delay={500} duration={1.5} animateOnce={true}>
         <div className="flex flex-row flex-wrap gap-y-[1rem] gap-x-[1.5rem] w-full justify-center">
           <div
-            className="col-span-1 border rounded-[0.5rem] h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
+            className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem] h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
             onMouseOver={() => onMouseOverHoverElement("1")}
             onMouseLeave={onMouseOutHoverElement}
             onClick={() => toggleModal("modal1")}
@@ -50,6 +50,7 @@ const Projects = forwardRef((props, ref) => {
               autoPlay
               loop
               muted
+              disablePictureInPicture
               className=" object-cover md:object-fill  h-full w-full"
               poster={gaPoster}
             >
@@ -65,7 +66,7 @@ const Projects = forwardRef((props, ref) => {
           </div>
 
           <div
-            className="col-span-1 border rounded-[0.5rem]  h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
+            className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem]  h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
             onMouseOver={() => onMouseOverHoverElement("2")}
             onMouseLeave={onMouseOutHoverElement}
             onClick={() => toggleModal("modal2")}
@@ -74,6 +75,7 @@ const Projects = forwardRef((props, ref) => {
               autoPlay
               loop
               muted
+              disablePictureInPicture
               className=" object-cover md:object-fill  h-full w-full"
               poster={myWebPoster}
             >
@@ -88,7 +90,7 @@ const Projects = forwardRef((props, ref) => {
             />
           </div>
           <div
-            className="col-span-1 border rounded-[0.5rem]  h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
+            className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem]  h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
             onMouseOver={() => onMouseOverHoverElement("3")}
             onMouseLeave={onMouseOutHoverElement}
             onClick={() => toggleModal("modal3")}
@@ -97,6 +99,7 @@ const Projects = forwardRef((props, ref) => {
               autoPlay
               loop
               muted
+              disablePictureInPicture
               className="object-cover  h-full w-full"
               poster={todoPoster}
             >
@@ -152,7 +155,7 @@ const Projects = forwardRef((props, ref) => {
           projVideo={myWebVideo}
           projPoster={myWebPoster}
           projAbout="My e-portfolio showcasing my projects that I have worked on."
-          projWebsite=""
+          projWebsite="https://hosoo.dev/"
         />
       </div>
       <div
