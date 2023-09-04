@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/mywebv2/static/css/main.3ee3750d.css",
+    "main.js": "/mywebv2/static/js/main.fb430db9.js",
+    "static/media/todo-video.mp4": "/mywebv2/static/media/todo-video.8bcc88c8871247d51037.mp4",
+    "static/media/ga-video1.mp4": "/mywebv2/static/media/ga-video1.20f4b70b25127ac0d58d.mp4",
+    "static/media/ga-poster.PNG": "/mywebv2/static/media/ga-poster.8d345ca2095136a65b87.PNG",
+    "static/media/myWeb-video.mp4": "/mywebv2/static/media/myWeb-video.1e94483100c7037bec0f.mp4",
+    "static/media/todo-poster.PNG": "/mywebv2/static/media/todo-poster.75a3b86c825a8842aa39.PNG",
+    "static/media/myWeb-poster.PNG": "/mywebv2/static/media/myWeb-poster.cdf84aa074bf3130f663.PNG",
+    "static/media/flowerHome.svg": "/mywebv2/static/media/flowerHome.65645867a51c6e2c60c19b5841e6b930.svg",
+    "index.html": "/mywebv2/index.html",
+    "main.3ee3750d.css.map": "/mywebv2/static/css/main.3ee3750d.css.map",
+    "main.fb430db9.js.map": "/mywebv2/static/js/main.fb430db9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ee3750d.css",
+    "static/js/main.fb430db9.js"
+  ]
+}
