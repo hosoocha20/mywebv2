@@ -25,10 +25,10 @@ const ProjectItemModal = (props) => {
       <div className="relative sm:px-[4rem] px-[3rem] flex flex-col gap-y-[1.7rem] pb-[1.5rem]">
         <div>
           <hr></hr>
-          <h2 className="text-[1.2rem] sm:text-[1.5rem] font-semibold mt-[2rem] text-[#142e9b]">
+          <h2 className="text-[1.2rem] md:text-[1.5rem] font-semibold mt-[2rem] text-[#142e9b]">
             {props.projName}
           </h2>
-          <p className="text-sm sm:text-base text-[#0c195a]">{props.projDescription}</p>
+          <p className="text-sm md:text-[15px] text-[#0c195a]">{props.projDescription}</p>
         </div>
         {props.projVideo ? (
           <video
@@ -48,12 +48,12 @@ const ProjectItemModal = (props) => {
           />
         )}
         <div className="text-[#0c195a]">
-          <h3 className="text-[1rem] sm:text-[1.1rem] font-semibold">About</h3>
-          <p className="text-sm sm:text-base">{props.projAbout}</p>
+          <h3 className="text-[1rem] md:text-[1.1rem] font-semibold">About</h3>
+          <p className="text-sm md:text-[15px]">{props.projAbout}</p>
         </div>
         <div>
-          <h3 className="text-[1rem] sm:text-[1.1rem] font-semibold text-[#0c195a]">
-            Tools & Libraries
+          <h3 className="text-[1rem] md:text-[1.1rem] font-semibold text-[#0c195a]">
+            Tools
           </h3>
           <div className="flex flex-row flex-wrap gap-[0.3rem] sm:gap-[1rem] pt-[0.5rem]">
             {props.arrayOfTools.map((i) => {
@@ -68,11 +68,11 @@ const ProjectItemModal = (props) => {
         <div>
           <div className="flex items-center gap-x-[0.5rem] text-[#0c195a]">
             <ImEarth />
-            <h3 className="text-[1rem] sm:text-[1.1rem] font-semibold">
+            <h3 className="text-[1rem] md:text-[1.1rem] font-semibold">
               Website
             </h3>
           </div>
-          <a href={props.projWebsite} target="_blank" rel="noreferrer" className="text-sm sm:text-[15px] hover:underline underline-offset-2 text-[#3985d0] font-medium">{props.projWebsite}</a>
+          <a href={props.projWebsite} target="_blank" rel="noreferrer" className="text-sm md:text-[14px] hover:underline underline-offset-2 text-[#3985d0] font-medium">{props.projWebsite}</a>
         </div>
       </div>
       <div className="group sticky bottom-0 left-0 w-full flex items-center justify-center gap-x-[0.5rem] bg-[#376aff] text-white py-[1.25rem] rounded-b-lg-[1rem] cursor-pointer">
