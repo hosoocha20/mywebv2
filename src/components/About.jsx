@@ -2,9 +2,10 @@ import React, { forwardRef } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 import { AiFillHtml5 } from "react-icons/ai";
-import { SiTailwindcss, SiSass } from "react-icons/si";
+import { SiTailwindcss, SiSass, SiNodedotjs } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { BsFiletypeSql, BsGit } from "react-icons/bs";
+import { BiLogoTypescript } from "react-icons/bi";
 
 const About = forwardRef((props, ref) => {
   return (
@@ -68,7 +69,12 @@ const About = forwardRef((props, ref) => {
           <div className="flex items-center justify-center gap-x-[0.3rem] ">
             {" "}
             <SiSass className="text-[1.5rem] text-[#c69]" />
-            <p className="text-[12px] sm:text-[14px] md:text-base">SASS</p>
+            <p className="text-[12px] sm:text-[14px] md:text-base">SCSS</p>
+          </div>
+          <div className="flex items-center justify-center gap-x-[0.3rem] ">
+            {" "}
+            <BiLogoTypescript  className="text-[1.5rem] text-[#3178C6]" />
+            <p className="text-[12px] sm:text-[14px] md:text-base">Typescript</p>
           </div>
           <div className="flex items-center justify-center gap-x-[0.3rem] ">
             {" "}
@@ -77,9 +83,14 @@ const About = forwardRef((props, ref) => {
           </div>
           <div className="flex items-center justify-center gap-x-[0.3rem] ">
             {" "}
+            <SiNodedotjs className="text-[1.5rem] text-[#3cb73a]" />
+            <p className="text-[12px] sm:text-[14px] md:text-base">Node JS</p>
+          </div>
+          <div className="flex items-center justify-center gap-x-[0.3rem] ">
+            {" "}
             <BsFiletypeSql className="text-[1.5rem]" />
             <p className="text-[12px] sm:text-[14px] md:text-base">
-              SQL/no SQL
+              SQL
             </p>
           </div>
           <div className="flex items-center justify-center gap-x-[0.3rem] ">
