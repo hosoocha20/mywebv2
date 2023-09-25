@@ -93,7 +93,7 @@ function App() {
             </div>
             <ul className="font-semibold menu-text md:text-[1.2rem] sm:text-[1rem] text-[1rem] sm:text-right text-center flex gap-x-[0.7rem] gap-y-[0.3rem] sm:flex-col justify-items-end sm:items-end items-center">
               <li
-                className={`cursor-pointer  w-fit px-[3px] relative before:absolute before:left-0 before:z-[-1]  before:h-full  before:duration-[300ms] before:delay-75 before:ease-linear before:bg-my-yellow before:rounded ${
+                className={`cursor-pointer  w-fit px-[3px] relative before:absolute before:left-0 before:z-[-1]  before:h-full  before:duration-[300ms] before:delay-100 before:ease-linear before:bg-my-yellow before:rounded ${
                   activeComponent === "home"
                     ? "before:transition-[width] before:w-full "
                     : "before:transition-none before:w-0 "
@@ -103,7 +103,7 @@ function App() {
                 <FlowerHomeIcon className="w-[2.2rem] h-[2.2rem] sm:w-[3.5rem] sm:h-[3.5rem] py-[5px] hover:rotate-[270deg] transition-transform duration-700 ease-in-out" />
               </li>
               <li
-                className={`cursor-pointer  w-fit px-[4px] relative before:absolute before:left-0 before:z-[-1]  before:h-full before:duration-[300ms] before:delay-75 before:ease-linear before:bg-my-yellow before:rounded ${
+                className={`cursor-pointer  w-fit px-[4px] relative before:absolute before:left-0 before:z-[-1]  before:h-full before:duration-[300ms] before:delay-100 before:ease-linear before:bg-my-yellow before:rounded ${
                   activeComponent === "about"
                     ? "before:transition-[width] before:w-full"
                     : "before:transition-none before:w-0 "
@@ -113,7 +113,7 @@ function App() {
                 ABOUT
               </li>
               <li
-                className={`cursor-pointer  w-fit px-[4px] relative before:absolute before:left-0 before:z-[-1]  before:h-full before:duration-[300ms] before:delay-75 before:ease-linear before:bg-my-yellow before:rounded ${
+                className={`cursor-pointer  w-fit px-[4px] relative before:absolute before:left-0 before:z-[-1]  before:h-full before:duration-[300ms] before:delay-100 before:ease-linear before:bg-my-yellow before:rounded ${
                   activeComponent === "project"
                     ? "before:transition-[width] before:w-full"
                     : "before:transition-none before:w-0 "
@@ -123,7 +123,7 @@ function App() {
                 PROJECTS
               </li>
               <li
-                className={`cursor-pointer  w-fit px-[4px] relative before:absolute before:left-0 before:z-[-1]  before:h-full before:duration-[300ms] before:delay-75 before:ease-linear before:bg-my-yellow before:rounded ${
+                className={`cursor-pointer  w-fit px-[4px] relative before:absolute before:left-0 before:z-[-1]  before:h-full before:duration-[300ms] before:delay-100 before:ease-linear before:bg-my-yellow before:rounded ${
                   activeComponent === "contact"
                     ? "before:transition-[width] before:w-full"
                     : "before:transition-none before:w-0 "
