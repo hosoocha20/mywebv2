@@ -28,7 +28,7 @@ const ProjectItemModal = (props) => {
           <h2 className="text-[1.2rem] md:text-[1.5rem] font-semibold mt-[2rem] text-[#142e9b]">
             {props.projName}
           </h2>
-          <p className="text-sm md:text-[15px] text-[#0c195a]">{props.projDescription}</p>
+          <p className="text-sm lg:text-base text-[#0c195a]">{props.projDescription}</p>
         </div>
         {props.projVideo ? (
           <video
@@ -49,7 +49,7 @@ const ProjectItemModal = (props) => {
         )}
         <div className="text-[#0c195a]">
           <h3 className="text-[1rem] md:text-[1.1rem] font-semibold">About</h3>
-          <p className="text-sm md:text-[15px]">{props.projAbout}</p>
+          <p className="text-sm lg:text-base">{props.projAbout}</p>
         </div>
         <div>
           <h3 className="text-[1rem] md:text-[1.1rem] font-semibold text-[#0c195a]">
@@ -72,7 +72,7 @@ const ProjectItemModal = (props) => {
               Website
             </h3>
           </div>
-          <a href={props.projWebsite} target="_blank" rel="noreferrer" className="text-sm md:text-[14px] hover:underline underline-offset-2 text-[#3985d0] font-medium">{props.projWebsite}</a>
+          <a href={props.projWebsite} target="_blank" rel="noreferrer" className="text-sm lg:text-base hover:underline underline-offset-2 text-[#3985d0] font-medium">{props.projWebsite}</a>
         </div>
       </div>
       <div className="group sticky bottom-0 left-0 w-full flex items-center justify-center gap-x-[0.5rem] bg-[#376aff] text-white py-[1.25rem] rounded-b-lg-[1rem] cursor-pointer">
