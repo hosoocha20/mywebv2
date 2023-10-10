@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.e231cece.css",
-    "main.js": "/static/js/main.48d00358.js",
+    "main.css": "/static/css/main.6925bf50.css",
+    "main.js": "/static/js/main.31788ca9.js",
+    "static/media/onlythevibez.mp4": "/static/media/onlythevibez.34adaf3ea2b67243c31c.mp4",
+    "static/media/onlythevibez-poster.PNG": "/static/media/onlythevibez-poster.5d2d399eb44d7f656967.PNG",
     "static/media/todo-video.mp4": "/static/media/todo-video.8bcc88c8871247d51037.mp4",
     "static/media/ga-video1.mp4": "/static/media/ga-video1.20f4b70b25127ac0d58d.mp4",
     "static/media/ga-poster.PNG": "/static/media/ga-poster.8d345ca2095136a65b87.PNG",
@@ -10,11 +12,11 @@
     "static/media/myWeb-poster.PNG": "/static/media/myWeb-poster.cdf84aa074bf3130f663.PNG",
     "static/media/flowerHome.svg": "/static/media/flowerHome.65645867a51c6e2c60c19b5841e6b930.svg",
     "index.html": "/index.html",
-    "main.e231cece.css.map": "/static/css/main.e231cece.css.map",
-    "main.48d00358.js.map": "/static/js/main.48d00358.js.map"
+    "main.6925bf50.css.map": "/static/css/main.6925bf50.css.map",
+    "main.31788ca9.js.map": "/static/js/main.31788ca9.js.map"
   },
   "entrypoints": [
-    "static/css/main.e231cece.css",
-    "static/js/main.48d00358.js"
+    "static/css/main.6925bf50.css",
+    "static/js/main.31788ca9.js"
   ]
 }
