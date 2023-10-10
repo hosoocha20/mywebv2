@@ -44,7 +44,7 @@ const Contact = forwardRef((props, ref) => {
             <a href="https://github.com/hosoocha20" target="_blank" rel="noreferrer">
               <AiFillGithub />
             </a>
-            <a href="www.linkedin.com/in/hosoo-cha" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/hosoo-cha/" target="_blank" rel="noreferrer">
               <ImLinkedin />
             </a>
           </div>
