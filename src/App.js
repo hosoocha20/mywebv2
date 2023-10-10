@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import { ReactComponent as FlowerHomeIcon } from "./svg/flowerHome.svg";
+import {motion, useInView, useAnimation} from "framer-motion";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState("home");

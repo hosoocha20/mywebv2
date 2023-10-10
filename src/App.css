@@ -33,6 +33,7 @@ body {
   animation: blink 0.75s step-end infinite;
 }
 
+
 @keyframes blink {
   from,
   to {

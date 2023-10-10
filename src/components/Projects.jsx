@@ -9,6 +9,8 @@ import todoPoster from "../imgs/todo-poster.PNG";
 import myWebVideo from "../media/myWeb-video.mp4";
 import myWebPoster from "../imgs/myWeb-poster.PNG";
 import ProjectItemModal from "./ProjectItemModal";
+import onlyTheVibezVideo from "../media/onlythevibez.mp4";
+import onlyTheVibezPoster from "../imgs/onlythevibez-poster.PNG";
 
 const Projects = forwardRef((props, ref) => {
   const [toggleProjHover, setToggleProjHover] = useState();
@@ -113,6 +115,30 @@ const Projects = forwardRef((props, ref) => {
               n="3"
             />
           </div>
+          <div
+            className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem]  h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
+            onMouseOver={() => onMouseOverHoverElement("4")}
+            onMouseLeave={onMouseOutHoverElement}
+            onClick={() => toggleModal("modal4")}
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              disablePictureInPicture
+              className="object-cover  h-full w-full"
+              poster={onlyTheVibezPoster}
+            >
+              <source src={onlyTheVibezVideo} type="video/mp4" />
+            </video>
+            <ProjectHoverItem
+              projectName="Only The Vibez"
+              projectDescription="Get inspired on where to eat and what to do in Auckland"
+              toggleProjHover={toggleProjHover}
+              arrayOfTools={["React", "TypeScript","SASS/SCSS", "Node.js", "Express", "mySQL", "Framer Motion"]}
+              n="4"
+            />
+          </div>
         </div>
       </AnimationOnScroll>
       <div
@@ -137,6 +163,7 @@ const Projects = forwardRef((props, ref) => {
           projPoster={gaPoster}
           projAbout="The Game Academy is a website where users can browse through products and play a game of chess with other registered users through the server."
           projWebsite="https://hosoocha20.github.io/game-academy/"
+          projGit="https://github.com/hosoocha20/game-academy"
         />
       </div>
       <div
@@ -175,6 +202,26 @@ const Projects = forwardRef((props, ref) => {
           projPoster={todoPoster}
           projAbout="My To Do App is a productivity app for users to list down tasks, important tasks, get the local weather and write notes."
           projWebsite="https://todoitnow.org/"
+          projGit="https://github.com/hosoocha20/dashboardv2"
+        />
+      </div>
+      <div
+        className={`fixed top-0 left-0 h-full w-screen flex items-center justify-center z-[99999] bg-[rgba(31,32,41,.75)] ${
+          openProjModal === "modal4"
+            ? "visible"
+            : "invisible transition-color duration-150 delay-300"
+        }`}
+      >
+        <ProjectItemModal
+          openProjModal={openProjModal}
+          closeProjModal={closeProjModal}
+          projName="Only The Vibez"
+          projDescription="A curation of Auckland's hottest and trendiest places and eateries"
+          arrayOfTools={["React", "TypeScript","SCSS", "Node.js", "Express", "mySQL", "Framer Motion"]}
+          projVideo={onlyTheVibezVideo}
+          projPoster={onlyTheVibezPoster}
+          projAbout="Only The Vibez shares trendy hotspots in Auckland to help inspire locals and visitors to explore Auckland, New Zealand. "
+          projGit="https://github.com/hosoocha20/onlyTheVibez"
         />
       </div>
     </div>

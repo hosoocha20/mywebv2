@@ -1,5 +1,8 @@
 import React, { forwardRef } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { ImLinkedin } from "react-icons/im";
+import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
+import Reveal from "./Reveal";
 
 const Contact = forwardRef((props, ref) => {
   return (
@@ -7,7 +10,7 @@ const Contact = forwardRef((props, ref) => {
       ref={ref}
       className="w-full h-screen  bg-my-white text-[#121212] px-[4rem] py-[2rem]"
     >
-      <div className="w-full h-full flex flex-col justify-center items-center">
+      <div className="w-full h-[90%] flex flex-col justify-center items-center">
         <div className="flex w-fit justify-center gap-[1.5rem] relative">
           <AnimationOnScroll animateIn="animate__fadeInUp" delay={100} animateOnce={true}>
             <h1 className="text-[12vw] md:text-[5.5rem] contact-text ">Get</h1>
@@ -36,6 +39,16 @@ const Contact = forwardRef((props, ref) => {
           </a>
         </AnimationOnScroll>
       </div>
+        <Reveal d={0}>
+          <div className="w-full flex justify-center gap-[1.5rem] text-[1.8rem]">
+            <a href="https://github.com/hosoocha20" target="_blank" rel="noreferrer">
+              <AiFillGithub />
+            </a>
+            <a href="www.linkedin.com/in/hosoo-cha" target="_blank" rel="noreferrer">
+              <ImLinkedin />
+            </a>
+          </div>
+        </Reveal>
     </div>
   );
 });
