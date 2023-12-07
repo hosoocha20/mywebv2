@@ -11,6 +11,10 @@ import myWebPoster from "../imgs/myWeb-poster.PNG";
 import ProjectItemModal from "./ProjectItemModal";
 import onlyTheVibezVideo from "../media/onlythevibez.mp4";
 import onlyTheVibezPoster from "../imgs/onlythevibez-poster.PNG";
+import kanbanVideoTN from "../media/kanban-videoTN.mp4";
+import kanbanVideoLong from "../media/kanban-videoLong.mp4";
+import kanbanPoster from "../imgs/kanban.PNG";
+
 
 const Projects = forwardRef((props, ref) => {
   const [toggleProjHover, setToggleProjHover] = useState();
@@ -103,15 +107,15 @@ const Projects = forwardRef((props, ref) => {
               muted
               disablePictureInPicture
               className="object-cover  h-full w-full"
-              poster={todoPoster}
+              poster={kanbanPoster}
             >
-              <source src={todoVideo} type="video/mp4" />
+              <source src={kanbanVideoTN} type="video/mp4" />
             </video>
             <ProjectHoverItem
-              projectName="My To Do App"
-              projectDescription="Make a list of things to do and write notes"
+              projectName="Wave - Productivity App"
+              projectDescription="Ride the Wave to Enhanced Productivity."
               toggleProjHover={toggleProjHover}
-              arrayOfTools={["React", "CSS", "JavaScript"]}
+              arrayOfTools={["React", "JavaScript", "SCSS", "NodeJS", "Express", "Postgres", "JWT"]}
               n="3"
             />
           </div>
@@ -161,7 +165,11 @@ const Projects = forwardRef((props, ref) => {
           ]}
           projVideo={gaVideo}
           projPoster={gaPoster}
-          projAbout="The Game Academy is a website where users can browse through products and play a game of chess with other registered users through the server."
+          projAbout={`The Game Academy is a website where users can browse through products and play a game of chess with other registered users through the server.
+
+                      This was a full stack website that was part of my school project that sparked my passion for web development.
+                      
+                      Integrating live chess matches was very enjoyable as I also enjoy playing chess myself. As a fellow gaming enthusiast, I am excited to expand more classic games to the website!`}
           projWebsite="https://hosoocha20.github.io/game-academy/"
           projGit="https://github.com/hosoocha20/game-academy"
         />
@@ -181,7 +189,9 @@ const Projects = forwardRef((props, ref) => {
           arrayOfTools={["React", "Tailwind CSS", "JavaScript"]}
           projVideo={myWebVideo}
           projPoster={myWebPoster}
-          projAbout="My e-portfolio showcasing my projects that I have worked on."
+          projAbout={`My e-portfolio showcasing my projects that I have worked on.
+          I enjoy creating aesthetic and unique experiences and hoped to express that through my personal website.
+          `}
           projWebsite="https://hosoo.dev/"
         />
       </div>
@@ -195,14 +205,19 @@ const Projects = forwardRef((props, ref) => {
         <ProjectItemModal
           openProjModal={openProjModal}
           closeProjModal={closeProjModal}
-          projName="My To Do App"
-          projDescription="Make a list of things to do and write notes"
-          arrayOfTools={["React", "CSS", "JavaScript", "SwiperJS"]}
-          projVideo={todoVideo}
-          projPoster={todoPoster}
-          projAbout="My To Do App is a productivity app for users to list down tasks, important tasks, get the local weather and write notes."
-          projWebsite="https://todoitnow.org/"
-          projGit="https://github.com/hosoocha20/dashboardv2"
+          projName="Wave"
+          projDescription="Ride the Wave to Enhanced Productivity."
+          arrayOfTools={["React", "JavaScript", "SCSS", "NodeJS", "Express", "Postgres", "JWT"]}
+          projVideo={kanbanVideoLong}
+          projPoster={kanbanPoster}
+          projAbout={`
+          Wave is more than just a task management website—it's your personalized productivity hub designed to streamline your daily tasks and elevate your efficiency. With Wave, you can jot down your to-dos, organize them effortlessly, and track your progress seamlessly.
+          
+          By creating an account on Wave, you unlock a world of productivity that's accessible anytime, anywhere. Your tasks are securely stored in our database, ensuring you never miss a beat in your workflow.
+
+          Tailor each task list with unique background themes that resonate with your style and mood. Additionally, the 'My Day' feature enables you to curate a daily list of tasks, helping you maximize your productivity and accomplish more within your day.
+          `}
+          projGit="https://github.com/hosoocha20/wave"
         />
       </div>
       <div
@@ -220,7 +235,10 @@ const Projects = forwardRef((props, ref) => {
           arrayOfTools={["React", "TypeScript","SCSS", "Node.js", "Express", "mySQL", "Framer Motion"]}
           projVideo={onlyTheVibezVideo}
           projPoster={onlyTheVibezPoster}
-          projAbout="Only The Vibez shares trendy hotspots in Auckland to help inspire locals and visitors to explore Auckland, New Zealand. "
+          projAbout={`Only The Vibez shares trendy hotspots in Auckland to help inspire locals and visitors to explore Auckland, New Zealand. 
+          
+                      Auckland's eateries are popping off lately. As a food lover myself, my aim is to share these wonderful places to those who are curious.
+                      `}
           projGit="https://github.com/hosoocha20/onlyTheVibez"
         />
       </div>

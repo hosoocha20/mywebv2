@@ -37,6 +37,7 @@ const ProjectItemModal = (props) => {
           <video
             autoPlay
             loop
+            controls="controls"
             muted
             disablePictureInPicture
             className="object-fill rounded-[0.7rem] border"
@@ -50,15 +51,15 @@ const ProjectItemModal = (props) => {
             className="object-fill border rounded-[0.7rem]"
           />
         )}
-        <div className="text-[#0c195a]">
+        <div className="text-[#0c195a] ">
           <h3 className="text-[1rem] xl:text-[1.1rem] font-semibold">About</h3>
-          <p className="text-sm xl:text-base">{props.projAbout}</p>
+          <div className="text-[13px] xl:text-[15px] whitespace-pre-line">{props.projAbout}</div>
         </div>
         <div>
           <h3 className="text-[1rem] xl:text-[1.1rem] font-semibold text-[#0c195a]">
             Tools
           </h3>
-          <div className="flex flex-row flex-wrap gap-[0.3rem] sm:gap-[1rem] pt-[0.5rem]">
+          <div className="flex flex-row flex-wrap gap-[0.3rem] sm:gap-[0.6rem] pt-[0.5rem]">
             {props.arrayOfTools.map((i) => {
               return (
                 <div className="px-[0.6rem] py-[0.2rem]  rounded text-xs bg-[#5c94ff] text-white font-medium">
@@ -82,7 +83,7 @@ const ProjectItemModal = (props) => {
               href={props.projWebsite}
               target="_blank"
               rel="noreferrer"
-              className="text-xs lg:text-base hover:underline underline-offset-2 text-[#3985d0] font-medium"
+              className="text-xs lg:text-sm hover:underline underline-offset-2 text-[#3985d0] font-medium"
             >
               {props.projWebsite}
             </a>
