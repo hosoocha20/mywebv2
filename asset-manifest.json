@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.02f132b8.css",
-    "main.js": "/static/js/main.1307651e.js",
+    "main.css": "/static/css/main.42286e66.css",
+    "main.js": "/static/js/main.7444e495.js",
     "static/media/onlythevibez.mp4": "/static/media/onlythevibez.34adaf3ea2b67243c31c.mp4",
     "static/media/kanban-videoLong.mp4": "/static/media/kanban-videoLong.34180da95e7ee673294a.mp4",
     "static/media/kanban-videoTN.mp4": "/static/media/kanban-videoTN.a2764a5a29c59ef1ab91.mp4",
@@ -15,11 +15,11 @@
     "static/media/myWeb-poster.PNG": "/static/media/myWeb-poster.cdf84aa074bf3130f663.PNG",
     "static/media/flowerHome.svg": "/static/media/flowerHome.65645867a51c6e2c60c19b5841e6b930.svg",
     "index.html": "/index.html",
-    "main.02f132b8.css.map": "/static/css/main.02f132b8.css.map",
-    "main.1307651e.js.map": "/static/js/main.1307651e.js.map"
+    "main.42286e66.css.map": "/static/css/main.42286e66.css.map",
+    "main.7444e495.js.map": "/static/js/main.7444e495.js.map"
   },
   "entrypoints": [
-    "static/css/main.02f132b8.css",
-    "static/js/main.1307651e.js"
+    "static/css/main.42286e66.css",
+    "static/js/main.7444e495.js"
   ]
 }
