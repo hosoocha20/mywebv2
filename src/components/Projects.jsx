@@ -14,7 +14,8 @@ import onlyTheVibezPoster from "../imgs/onlythevibez-poster.PNG";
 import kanbanVideoTN from "../media/kanban-videoTN.mp4";
 import kanbanVideoLong from "../media/kanban-videoLong.mp4";
 import kanbanPoster from "../imgs/kanban.PNG";
-
+import verdantGroveFE from "../imgs/verdant-grove-fe.PNG";
+import verdantGroveFEVideo from "../media/verdant-grove-fe.mp4";
 
 const Projects = forwardRef((props, ref) => {
   const [toggleProjHover, setToggleProjHover] = useState();
@@ -39,13 +40,24 @@ const Projects = forwardRef((props, ref) => {
       ref={ref}
       className="w-full min-h-screen   px-[1rem] py-[4rem] flex flex-col gap-y-[2.5rem] justify-center bg-[#f9f9f9]"
     >
-      <AnimationOnScroll animateIn="animate__fadeInUp" delay={200} duration={1} animateOnce={true}>
+      <AnimationOnScroll
+        animateIn="animate__fadeInUp"
+        delay={200}
+        duration={1}
+        animateOnce={true}
+      >
         <h1 className="text-[2.2rem] sm:text-[3.5rem] font-semibold text-center text-[#0c2bc7]">
           MY PROJECTS
         </h1>
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn="animate__fadeIn" delay={500} duration={1.5} animateOnce={true}>
+      <AnimationOnScroll
+        animateIn="animate__fadeIn"
+        delay={500}
+        duration={1.5}
+        animateOnce={true}
+      >
         <div className="flex flex-row flex-wrap gap-y-[1rem] gap-x-[1.5rem] w-full justify-center">
+
           <div
             className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem] h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
             onMouseOver={() => onMouseOverHoverElement("1")}
@@ -115,7 +127,15 @@ const Projects = forwardRef((props, ref) => {
               projectName="Wave - Productivity App"
               projectDescription="Ride the Wave to Enhanced Productivity."
               toggleProjHover={toggleProjHover}
-              arrayOfTools={["React", "JavaScript", "SCSS", "NodeJS", "Express", "Postgres", "JWT"]}
+              arrayOfTools={[
+                "React",
+                "JavaScript",
+                "SCSS",
+                "NodeJS",
+                "Express",
+                "Postgres",
+                "JWT",
+              ]}
               n="3"
             />
           </div>
@@ -139,8 +159,40 @@ const Projects = forwardRef((props, ref) => {
               projectName="Only The Vibez"
               projectDescription="Get inspired on where to eat and what to do in Auckland"
               toggleProjHover={toggleProjHover}
-              arrayOfTools={["React", "TypeScript","SASS/SCSS", "Node.js", "Express", "mySQL", "Framer Motion"]}
+              arrayOfTools={[
+                "React",
+                "TypeScript",
+                "SASS/SCSS",
+                "Node.js",
+                "Express",
+                "mySQL",
+                "Framer Motion",
+              ]}
               n="4"
+            />
+          </div>
+          <div
+            className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem] h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
+            onMouseOver={() => onMouseOverHoverElement("1")}
+            onMouseLeave={onMouseOutHoverElement}
+            onClick={() => toggleModal("modal5")}
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              disablePictureInPicture
+              className=" object-cover md:object-fill  h-full w-full"
+              poster={verdantGroveFE}
+            >
+              <source src={verdantGroveFEVideo} type="video/mp4" />
+            </video>
+            <ProjectHoverItem
+              projectName="The Verdant Grove"
+              projectDescription="E-commerce website selling fruits with a twist!"
+              toggleProjHover={toggleProjHover}
+              arrayOfTools={["Vite", "TypeScript", "SCSS", "MUI", "React Router"]}
+              n="5"
             />
           </div>
         </div>
@@ -207,7 +259,15 @@ const Projects = forwardRef((props, ref) => {
           closeProjModal={closeProjModal}
           projName="Wave"
           projDescription="Ride the Wave to Enhanced Productivity."
-          arrayOfTools={["React", "JavaScript", "SCSS", "NodeJS", "Express", "Postgres", "JWT"]}
+          arrayOfTools={[
+            "React",
+            "JavaScript",
+            "SCSS",
+            "NodeJS",
+            "Express",
+            "Postgres",
+            "JWT",
+          ]}
           projVideo={kanbanVideoLong}
           projPoster={kanbanPoster}
           projAbout={`
@@ -232,7 +292,15 @@ const Projects = forwardRef((props, ref) => {
           closeProjModal={closeProjModal}
           projName="Only The Vibez"
           projDescription="A curation of Auckland's hottest and trendiest places and eateries"
-          arrayOfTools={["React", "TypeScript","SCSS", "Node.js", "Express", "mySQL", "Framer Motion"]}
+          arrayOfTools={[
+            "React",
+            "TypeScript",
+            "SCSS",
+            "Node.js",
+            "Express",
+            "mySQL",
+            "Framer Motion",
+          ]}
           projVideo={onlyTheVibezVideo}
           projPoster={onlyTheVibezPoster}
           projAbout={`Only The Vibez shares trendy hotspots in Auckland to help inspire locals and visitors to explore Auckland, New Zealand. 
@@ -240,6 +308,37 @@ const Projects = forwardRef((props, ref) => {
                       Auckland's eateries are popping off lately. As a food lover myself, my aim is to share these wonderful places to those who are curious.
                       `}
           projGit="https://github.com/hosoocha20/onlyTheVibez"
+        />
+      </div>
+      <div
+        className={`fixed top-0 left-0 h-full w-screen flex items-center justify-center z-[99999] bg-[rgba(31,32,41,.75)] ${
+          openProjModal === "modal5"
+            ? "visible"
+            : "invisible transition-color duration-150 delay-300"
+        }`}
+      >
+        <ProjectItemModal
+          openProjModal={openProjModal}
+          closeProjModal={closeProjModal}
+          projName="The Verdant Grove"
+          projDescription="E-commerce website selling fruits with a twist!"
+          arrayOfTools={[
+            "Vite",
+            "TypeScript",
+            "SCSS",
+            "MUI",
+            "React Router",
+          ]}
+          projVideo={verdantGroveFEVideo}
+          projPoster={verdantGroveFE}
+          projAbout={`The Verdant Grove is an e-commerce website selling fruits with a twist! The twist being - hybrid fruits real and imaginative. This project is built to showcase a user-friendly and unique shopping journey that simulates a fully functional store that follows conventions.
+          
+                      All fruits and hybrid fruits (both real and imagined) are brought to life using the power of AI. Users can create accounts, log in, search and add products to their carts, manage checkout selections, proceed through payment simulations, update profile and view order history.
+
+                      This initial version prioritizes the frontend experience, ensuring a smooth and intuitive shopping simulation for desktop users in full-screen mode. Responsive design for a wider range of devices is actively being developed. Backend integration to handle functionalities like payments and order fulfillment is in progress.
+                      `}
+          projWebsite="https://hosoocha20.github.io/verdant-grove-fe/#/"
+          projGit="https://github.com/hosoocha20/verdant-grove-fe"
         />
       </div>
     </div>
