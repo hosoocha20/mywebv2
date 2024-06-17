@@ -141,7 +141,7 @@ const Projects = forwardRef((props, ref) => {
           </div>
           <div
             className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem]  h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
-            onMouseOver={() => onMouseOverHoverElement("5")}
+            onMouseOver={() => onMouseOverHoverElement("4")}
             onMouseLeave={onMouseOutHoverElement}
             onClick={() => toggleModal("modal4")}
           >
@@ -173,7 +173,7 @@ const Projects = forwardRef((props, ref) => {
           </div>
           <div
             className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem] h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
-            onMouseOver={() => onMouseOverHoverElement("1")}
+            onMouseOver={() => onMouseOverHoverElement("5")}
             onMouseLeave={onMouseOutHoverElement}
             onClick={() => toggleModal("modal5")}
           >
