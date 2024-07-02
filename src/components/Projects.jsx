@@ -16,6 +16,8 @@ import kanbanVideoLong from "../media/kanban-videoLong.mp4";
 import kanbanPoster from "../imgs/kanban.PNG";
 import verdantGroveFE from "../imgs/verdant-grove-fe.PNG";
 import verdantGroveFEVideo from "../media/verdant-grove-fe.mp4";
+import vgFSVideo from "../media/vgFSVideo";
+import vgFSPoster from "../imgs/vgFSPoster";
 
 const Projects = forwardRef((props, ref) => {
   const [toggleProjHover, setToggleProjHover] = useState();
@@ -57,7 +59,6 @@ const Projects = forwardRef((props, ref) => {
         animateOnce={true}
       >
         <div className="flex flex-row flex-wrap gap-y-[1rem] gap-x-[1.5rem] w-full justify-center">
-
           <div
             className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem] h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
             onMouseOver={() => onMouseOverHoverElement("1")}
@@ -183,15 +184,23 @@ const Projects = forwardRef((props, ref) => {
               muted
               disablePictureInPicture
               className=" object-cover md:object-fill  h-full w-full"
-              poster={verdantGroveFE}
+              poster={vgFSPoster}
             >
-              <source src={verdantGroveFEVideo} type="video/mp4" />
+              <source src={vgFSVideo} type="video/mp4" />
             </video>
             <ProjectHoverItem
               projectName="The Verdant Grove"
               projectDescription="E-commerce website selling fruits with a twist!"
               toggleProjHover={toggleProjHover}
-              arrayOfTools={["Vite", "TypeScript", "SCSS", "MUI", "React Router"]}
+              arrayOfTools={[
+                "Vite",
+                "TypeScript",
+                "SCSS",
+                "MUI",
+                "Express",
+                "MongoDB",
+                "React Router",
+              ]}
               n="5"
             />
           </div>
@@ -327,18 +336,20 @@ const Projects = forwardRef((props, ref) => {
             "TypeScript",
             "SCSS",
             "MUI",
+            "Express",
+            "MongoDB",
             "React Router",
           ]}
-          projVideo={verdantGroveFEVideo}
-          projPoster={verdantGroveFE}
+          projVideo={vgFSVideo}
+          projPoster={vgFSPoster}
           projAbout={`The Verdant Grove is an e-commerce website selling fruits with a twist! The twist being - hybrid fruits real and imaginative. This project is built to showcase a user-friendly and unique shopping journey that simulates a fully functional store that follows conventions.
           
                       All fruits and hybrid fruits (both real and imagined) are brought to life using the power of AI. Users can create accounts, log in, search and add products to their carts, manage checkout selections, proceed through payment simulations, update profile and view order history.
 
-                      This initial version prioritizes the frontend experience, ensuring a smooth and intuitive shopping simulation for desktop users in full-screen mode. Responsive design for a wider range of devices is actively being developed. Backend integration to handle functionalities like payments and order fulfillment is in progress.
+                      Additionally, the website boasts a fully responsive design, ensuring a smooth shopping experience across desktops, tablets, and mobile devices.
                       `}
-          projWebsite="https://hosoocha20.github.io/verdant-grove-fe/#/"
-          projGit="https://github.com/hosoocha20/verdant-grove-fe"
+          projWebsite="https://the-verdant-grove.vercel.app"
+          projGit="https://github.com/hosoocha20/The-Verdant-Grove"
         />
       </div>
     </div>
