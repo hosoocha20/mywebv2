@@ -16,8 +16,8 @@ import kanbanVideoLong from "../media/kanban-videoLong.mp4";
 import kanbanPoster from "../imgs/kanban.PNG";
 import verdantGroveFE from "../imgs/verdant-grove-fe.PNG";
 import verdantGroveFEVideo from "../media/verdant-grove-fe.mp4";
-import vgFSVideo from "../media/vgFS-video";
-import vgFSPoster from "../imgs/vgFSPoster";
+import vgFSVideo from "../media/vgFS-video.mp4";
+import vgFSPoster from "../imgs/vgFSPoster.PNG";
 
 const Projects = forwardRef((props, ref) => {
   const [toggleProjHover, setToggleProjHover] = useState();
