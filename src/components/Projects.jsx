@@ -105,7 +105,7 @@ const Projects = forwardRef((props, ref) => {
               projectDescription="Portfolio Website"
               toggleProjHover={toggleProjHover}
               arrayOfTools={["React", "Tailwind CSS", "JavaScript"]}
-              n="2"
+              n="1"
             />
           </div>
           <div
@@ -137,7 +137,7 @@ const Projects = forwardRef((props, ref) => {
                 "Postgres",
                 "JWT",
               ]}
-              n="3"
+              n="2"
             />
           </div>
           <div
@@ -169,7 +169,7 @@ const Projects = forwardRef((props, ref) => {
                 "MongoDB",
                 "React Router",
               ]}
-              n="5"
+              n="3"
             />
           </div>
           <div
