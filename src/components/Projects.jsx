@@ -59,7 +59,7 @@ const Projects = forwardRef((props, ref) => {
         animateOnce={true}
       >
         <div className="flex flex-row flex-wrap gap-y-[1rem] gap-x-[1.5rem] w-full justify-center">
-          <div
+          {/* <div
             className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem] h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
             onMouseOver={() => onMouseOverHoverElement("1")}
             onMouseLeave={onMouseOutHoverElement}
@@ -82,13 +82,13 @@ const Projects = forwardRef((props, ref) => {
               arrayOfTools={["React", "Tailwind CSS", "JavaScript"]}
               n="1"
             />
-          </div>
+          </div> */}
 
           <div
             className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem]  h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
-            onMouseOver={() => onMouseOverHoverElement("2")}
+            onMouseOver={() => onMouseOverHoverElement("1")}
             onMouseLeave={onMouseOutHoverElement}
-            onClick={() => toggleModal("modal2")}
+            onClick={() => toggleModal("modal1")}
           >
             <video
               autoPlay
@@ -110,9 +110,9 @@ const Projects = forwardRef((props, ref) => {
           </div>
           <div
             className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem]  h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
-            onMouseOver={() => onMouseOverHoverElement("3")}
+            onMouseOver={() => onMouseOverHoverElement("2")}
             onMouseLeave={onMouseOutHoverElement}
-            onClick={() => toggleModal("modal3")}
+            onClick={() => toggleModal("modal2")}
           >
             <video
               autoPlay
@@ -138,6 +138,38 @@ const Projects = forwardRef((props, ref) => {
                 "JWT",
               ]}
               n="3"
+            />
+          </div>
+          <div
+            className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem] h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
+            onMouseOver={() => onMouseOverHoverElement("3")}
+            onMouseLeave={onMouseOutHoverElement}
+            onClick={() => toggleModal("modal3")}
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              disablePictureInPicture
+              className=" object-cover md:object-fill  h-full w-full"
+              poster={vgFSPoster}
+            >
+              <source src={vgFSVideo} type="video/mp4" />
+            </video>
+            <ProjectHoverItem
+              projectName="The Verdant Grove"
+              projectDescription="E-commerce website selling fruits with a twist!"
+              toggleProjHover={toggleProjHover}
+              arrayOfTools={[
+                "Vite",
+                "TypeScript",
+                "SCSS",
+                "MUI",
+                "Express",
+                "MongoDB",
+                "React Router",
+              ]}
+              n="5"
             />
           </div>
           <div
@@ -172,41 +204,10 @@ const Projects = forwardRef((props, ref) => {
               n="4"
             />
           </div>
-          <div
-            className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem] h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
-            onMouseOver={() => onMouseOverHoverElement("5")}
-            onMouseLeave={onMouseOutHoverElement}
-            onClick={() => toggleModal("modal5")}
-          >
-            <video
-              autoPlay
-              loop
-              muted
-              disablePictureInPicture
-              className=" object-cover md:object-fill  h-full w-full"
-              poster={vgFSPoster}
-            >
-              <source src={vgFSVideo} type="video/mp4" />
-            </video>
-            <ProjectHoverItem
-              projectName="The Verdant Grove"
-              projectDescription="E-commerce website selling fruits with a twist!"
-              toggleProjHover={toggleProjHover}
-              arrayOfTools={[
-                "Vite",
-                "TypeScript",
-                "SCSS",
-                "MUI",
-                "Express",
-                "MongoDB",
-                "React Router",
-              ]}
-              n="5"
-            />
-          </div>
+
         </div>
       </AnimationOnScroll>
-      <div
+      {/* <div
         className={`fixed top-0 left-0 h-full w-screen flex items-center justify-center z-[99999] bg-[rgba(31,32,41,.75)] ${
           openProjModal === "modal1"
             ? "visible"
@@ -234,10 +235,10 @@ const Projects = forwardRef((props, ref) => {
           projWebsite="https://hosoocha20.github.io/game-academy/"
           projGit="https://github.com/hosoocha20/game-academy"
         />
-      </div>
+      </div> */}
       <div
         className={`fixed top-0 left-0 h-full w-screen flex items-center justify-center z-[99999] bg-[rgba(31,32,41,.75)] ${
-          openProjModal === "modal2"
+          openProjModal === "modal1"
             ? "visible"
             : "invisible transition-color duration-150 delay-300"
         }`}
@@ -258,7 +259,7 @@ const Projects = forwardRef((props, ref) => {
       </div>
       <div
         className={`fixed top-0 left-0 h-full w-screen flex items-center justify-center z-[99999] bg-[rgba(31,32,41,.75)] ${
-          openProjModal === "modal3"
+          openProjModal === "modal2"
             ? "visible"
             : "invisible transition-color duration-150 delay-300"
         }`}
@@ -291,37 +292,7 @@ const Projects = forwardRef((props, ref) => {
       </div>
       <div
         className={`fixed top-0 left-0 h-full w-screen flex items-center justify-center z-[99999] bg-[rgba(31,32,41,.75)] ${
-          openProjModal === "modal4"
-            ? "visible"
-            : "invisible transition-color duration-150 delay-300"
-        }`}
-      >
-        <ProjectItemModal
-          openProjModal={openProjModal}
-          closeProjModal={closeProjModal}
-          projName="Only The Vibez"
-          projDescription="A curation of Auckland's hottest and trendiest places and eateries"
-          arrayOfTools={[
-            "React",
-            "TypeScript",
-            "SCSS",
-            "Node.js",
-            "Express",
-            "mySQL",
-            "Framer Motion",
-          ]}
-          projVideo={onlyTheVibezVideo}
-          projPoster={onlyTheVibezPoster}
-          projAbout={`Only The Vibez shares trendy hotspots in Auckland to help inspire locals and visitors to explore Auckland, New Zealand. 
-          
-                      Auckland's eateries are popping off lately. As a food lover myself, my aim is to share these wonderful places to those who are curious.
-                      `}
-          projGit="https://github.com/hosoocha20/onlyTheVibez"
-        />
-      </div>
-      <div
-        className={`fixed top-0 left-0 h-full w-screen flex items-center justify-center z-[99999] bg-[rgba(31,32,41,.75)] ${
-          openProjModal === "modal5"
+          openProjModal === "modal3"
             ? "visible"
             : "invisible transition-color duration-150 delay-300"
         }`}
@@ -352,6 +323,37 @@ const Projects = forwardRef((props, ref) => {
           projGit="https://github.com/hosoocha20/The-Verdant-Grove"
         />
       </div>
+      <div
+        className={`fixed top-0 left-0 h-full w-screen flex items-center justify-center z-[99999] bg-[rgba(31,32,41,.75)] ${
+          openProjModal === "modal4"
+            ? "visible"
+            : "invisible transition-color duration-150 delay-300"
+        }`}
+      >
+        <ProjectItemModal
+          openProjModal={openProjModal}
+          closeProjModal={closeProjModal}
+          projName="Only The Vibez"
+          projDescription="A curation of Auckland's hottest and trendiest places and eateries"
+          arrayOfTools={[
+            "React",
+            "TypeScript",
+            "SCSS",
+            "Node.js",
+            "Express",
+            "mySQL",
+            "Framer Motion",
+          ]}
+          projVideo={onlyTheVibezVideo}
+          projPoster={onlyTheVibezPoster}
+          projAbout={`Only The Vibez shares trendy hotspots in Auckland to help inspire locals and visitors to explore Auckland, New Zealand. 
+          
+                      Auckland's eateries are popping off lately. As a food lover myself, my aim is to share these wonderful places to those who are curious.
+                      `}
+          projGit="https://github.com/hosoocha20/onlyTheVibez"
+        />
+      </div>
+
     </div>
   );
 });
