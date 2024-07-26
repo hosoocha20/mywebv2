@@ -16,8 +16,10 @@ import kanbanVideoLong from "../media/kanban-videoLong.mp4";
 import kanbanPoster from "../imgs/kanban.PNG";
 import verdantGroveFE from "../imgs/verdant-grove-fe.PNG";
 import verdantGroveFEVideo from "../media/verdant-grove-fe.mp4";
-import vgFSVideo from "../media/vgFS-video.mp4";
-import vgFSPoster from "../imgs/vgFSPoster.PNG";
+import vgFSVideo from "../media/vgfs-video.mp4";
+import vgFSPoster from "../imgs/vgfsPoster.PNG";
+import smartMenuVideo from "../media/smartMenu.mp4";
+import smartMenuPoster from "../imgs/smartMenu.PNG";
 
 const Projects = forwardRef((props, ref) => {
   const [toggleProjHover, setToggleProjHover] = useState();
@@ -204,6 +206,38 @@ const Projects = forwardRef((props, ref) => {
               n="4"
             />
           </div>
+          <div
+            className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem]  h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
+            onMouseOver={() => onMouseOverHoverElement("5")}
+            onMouseLeave={onMouseOutHoverElement}
+            onClick={() => toggleModal("modal5")}
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              disablePictureInPicture
+              className="object-cover  h-full w-full"
+              poster={smartMenuPoster}
+            >
+              <source src={smartMenuVideo} type="video/mp4" />
+            </video>
+            <ProjectHoverItem
+              projectName="SmartMenu"
+              projectDescription="A Smart solution for your restaurants"
+              toggleProjHover={toggleProjHover}
+              arrayOfTools={[
+                "React",
+                "TypeScript",
+                "TailwindCSS",
+                "Node.js",
+                "Express",
+                "PostgreSQL",
+                "Framer Motion",
+              ]}
+              n="5"
+            />
+          </div>
 
         </div>
       </AnimationOnScroll>
@@ -351,6 +385,38 @@ const Projects = forwardRef((props, ref) => {
                       Auckland's eateries are popping off lately. As a food lover myself, my aim is to share these wonderful places to those who are curious.
                       `}
           projGit="https://github.com/hosoocha20/onlyTheVibez"
+        />
+      </div>
+      <div
+        className={`fixed top-0 left-0 h-full w-screen flex items-center justify-center z-[99999] bg-[rgba(31,32,41,.75)] ${
+          openProjModal === "modal5"
+            ? "visible"
+            : "invisible transition-color duration-150 delay-300"
+        }`}
+      >
+        <ProjectItemModal
+          openProjModal={openProjModal}
+          closeProjModal={closeProjModal}
+          projName="SmartMenu"
+          projDescription="A Smart solution for your restaurants"
+          arrayOfTools={[
+            "React",
+            "TypeScript",
+            "TailwindCSS",
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "Framer Motion",
+          ]}
+          projVideo={smartMenuVideo}
+          projPoster={smartMenuPoster}
+          projAbout={`SmartMenu is a user-friendly self-service ordering software designed to enhance the dining experience for both customers and restaurants.
+          
+                      With SmartMenu, customers can effortlessly browse menus, customize orders, and complete payments without the need for waitstaff interventions.
+
+                      SmartMenu is currently still being developed. Im working to integrate a robust backend system to accomodate the features, then once complete I plan on deploying to the app stores.
+                      `}
+          projGit="https://github.com/hosoocha20/menu-app"
         />
       </div>
 
