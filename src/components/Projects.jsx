@@ -20,6 +20,7 @@ import vgFSVideo from "../media/vgfs-video.mp4";
 import vgFSPoster from "../imgs/vgfsPoster.PNG";
 import smartMenuVideo from "../media/smartMenu.mp4";
 import smartMenuPoster from "../imgs/smartMenu.PNG";
+import uilabPoster from "../imgs/uilab.PNG";
 
 const Projects = forwardRef((props, ref) => {
   const [toggleProjHover, setToggleProjHover] = useState();
@@ -239,6 +240,36 @@ const Projects = forwardRef((props, ref) => {
             />
           </div>
 
+          <div
+            className="col-span-1 border border-[#dcdcdc] rounded-[0.5rem]  h-[300px] relative cursor-pointer overflow-hidden w-[520px]"
+            onMouseOver={() => onMouseOverHoverElement("6")}
+            onMouseLeave={onMouseOutHoverElement}
+            onClick={() => toggleModal("modal6")}
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              disablePictureInPicture
+              className="object-cover  h-full w-full"
+              poster={uilabPoster}
+            >
+              <source src={uilabPoster} type="video/mp4" />
+            </video>
+            <ProjectHoverItem
+              projectName="UiLab"
+              projectDescription="A collection of free ui components to elevate your interface."
+              toggleProjHover={toggleProjHover}
+              arrayOfTools={[
+                "React",
+                "TypeScript",
+                "TailwindCSS",
+                "Framer Motion",
+              ]}
+              n="6"
+            />
+          </div>
+
         </div>
       </AnimationOnScroll>
       {/* <div
@@ -417,6 +448,36 @@ const Projects = forwardRef((props, ref) => {
                       SmartMenu is currently still being developed. Im working to integrate a robust backend system to accomodate the features, then once complete I plan on deploying to the app stores.
                       `}
           projGit="https://github.com/hosoocha20/menu-app"
+        />
+      </div>
+
+      <div
+        className={`fixed top-0 left-0 h-full w-screen flex items-center justify-center z-[99999] bg-[rgba(31,32,41,.75)] ${
+          openProjModal === "modal6"
+            ? "visible"
+            : "invisible transition-color duration-150 delay-300"
+        }`}
+      >
+        <ProjectItemModal
+          openProjModal={openProjModal}
+          closeProjModal={closeProjModal}
+          projName="UiLab"
+          projDescription="A collection of free ui components to elevate your interface"
+          arrayOfTools={[
+            "React",
+            "TypeScript",
+            "TailwindCSS",
+            "Framer Motion",
+          ]}
+          projVideo={uilabPoster}
+          projPoster={uilabPoster}
+          projAbout={`UILab is a personal project I'm currently developing initiated to share reusable UI components. 
+            
+                      It's a collection of pre-built React components designed to accelerate web development. By providing a library of easily accessible UI elements, UILab aims to help developers create visually appealing and user-friendly interfaces with efficiency. 
+                      
+                      Inspired by modern design trends, the components are crafted with attention to detail and are ready to be integrated into any React project through simple copy and pasting.
+                        `}
+          projGit="https://github.com/hosoocha20/uilab"
         />
       </div>
 
