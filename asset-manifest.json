@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.42286e66.css",
-    "main.js": "/static/js/main.73b4ee87.js",
+    "main.js": "/static/js/main.83b8b676.js",
     "static/media/verdant-grove-fe.mp4": "/static/media/verdant-grove-fe.09e4223558a0d242e876.mp4",
     "static/media/onlythevibez.mp4": "/static/media/onlythevibez.34adaf3ea2b67243c31c.mp4",
     "static/media/vgfs-video.mp4": "/static/media/vgfs-video.e014e966fa4e56be0aa8.mp4",
@@ -18,14 +18,15 @@
     "static/media/smartMenu.PNG": "/static/media/smartMenu.304ee13ea247826bc9ca.PNG",
     "static/media/kanban.PNG": "/static/media/kanban.8b1bc3fc4abdf8c89289.PNG",
     "static/media/todo-poster.PNG": "/static/media/todo-poster.75a3b86c825a8842aa39.PNG",
+    "static/media/uilab.PNG": "/static/media/uilab.3ebf93beb914483d8f4f.PNG",
     "static/media/myWeb-poster.PNG": "/static/media/myWeb-poster.cdf84aa074bf3130f663.PNG",
     "static/media/flowerHome.svg": "/static/media/flowerHome.65645867a51c6e2c60c19b5841e6b930.svg",
     "index.html": "/index.html",
     "main.42286e66.css.map": "/static/css/main.42286e66.css.map",
-    "main.73b4ee87.js.map": "/static/js/main.73b4ee87.js.map"
+    "main.83b8b676.js.map": "/static/js/main.83b8b676.js.map"
   },
   "entrypoints": [
     "static/css/main.42286e66.css",
-    "static/js/main.73b4ee87.js"
+    "static/js/main.83b8b676.js"
   ]
 }
