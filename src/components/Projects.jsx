@@ -21,6 +21,7 @@ import vgFSPoster from "../imgs/vgfsPoster.PNG";
 import smartMenuVideo from "../media/smartmenu-next.mp4";
 import smartMenuPoster from "../imgs/smartmenu-next.PNG";
 import uilabPoster from "../imgs/uilab.PNG";
+import uilabVideo from "../media/uilab.mp4";
 
 const Projects = forwardRef((props, ref) => {
   const [toggleProjHover, setToggleProjHover] = useState();
@@ -251,7 +252,7 @@ const Projects = forwardRef((props, ref) => {
               className="object-cover  h-full w-full"
               poster={uilabPoster}
             >
-              <source src={uilabPoster} type="video/mp4" />
+              <source src={uilabVideo} type="video/mp4" />
             </video>
             <ProjectHoverItem
               projectName="UiLab"
@@ -464,7 +465,7 @@ const Projects = forwardRef((props, ref) => {
             "TailwindCSS",
             "Framer Motion",
           ]}
-          projVideo={uilabPoster}
+          projVideo={uilabVideo}
           projPoster={uilabPoster}
           projAbout={`UILab is a personal project I'm currently developing initiated to share reusable UI components. 
             
