@@ -18,8 +18,8 @@ import verdantGroveFE from "../imgs/verdant-grove-fe.PNG";
 import verdantGroveFEVideo from "../media/verdant-grove-fe.mp4";
 import vgFSVideo from "../media/vgfs-video.mp4";
 import vgFSPoster from "../imgs/vgfsPoster.PNG";
-import smartMenuVideo from "../media/smartMenu.mp4";
-import smartMenuPoster from "../imgs/smartMenu.PNG";
+import smartMenuVideo from "../media/smartmenu-next.mp4";
+import smartMenuPoster from "../imgs/smartmenu-next.PNG";
 import uilabPoster from "../imgs/uilab.PNG";
 
 const Projects = forwardRef((props, ref) => {
@@ -225,15 +225,12 @@ const Projects = forwardRef((props, ref) => {
             </video>
             <ProjectHoverItem
               projectName="SmartMenu"
-              projectDescription="A Smart solution for your restaurants"
+              projectDescription="A Smart solution for restaurants"
               toggleProjHover={toggleProjHover}
               arrayOfTools={[
-                "React",
+                "NextJS",
                 "TypeScript",
                 "TailwindCSS",
-                "Node.js",
-                "Express",
-                "PostgreSQL",
                 "Framer Motion",
               ]}
               n="5"
@@ -429,14 +426,11 @@ const Projects = forwardRef((props, ref) => {
           openProjModal={openProjModal}
           closeProjModal={closeProjModal}
           projName="SmartMenu"
-          projDescription="A Smart solution for your restaurants"
+          projDescription="A Smart solution for restaurants"
           arrayOfTools={[
-            "React",
+            "NextJS",
             "TypeScript",
             "TailwindCSS",
-            "Node.js",
-            "Express",
-            "PostgreSQL",
             "Framer Motion",
           ]}
           projVideo={smartMenuVideo}
@@ -445,9 +439,10 @@ const Projects = forwardRef((props, ref) => {
           
                       With SmartMenu, customers can effortlessly browse menus, customize orders, and complete payments without the need for waitstaff interventions.
 
-                      SmartMenu is currently still being developed. Im working to integrate a robust backend system to accomodate the features, then once complete I plan on deploying to the app stores.
+                      SmartMenu is currently still being developed. Im working to integrate a robust backend system to accomodate the features.
                       `}
-          projGit="https://github.com/hosoocha20/menu-app"
+          projGit="https://github.com/hosoocha20/menuapp-next"
+          projWebsite="https://smartmenu-app.vercel.app"
         />
       </div>
 
